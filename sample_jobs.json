@@ -1,11 +1,116 @@
 [
   {
+    "title": "Frontend Web Application Developer",
+    "company": "KoboToolbox",
+    "location": "USA, Canada, Argentina, Mexico, Peru",
+    "experience": "0-2 years",
+    "salary": "₹8 - 18 LPA",
+    "skills": [
+      "api",
+      "django",
+      "docker",
+      "frontend",
+      "git"
+    ],
+    "apply_url": "https://remotive.com/remote-jobs/design/frontend-web-application-developer-2091141",
+    "domain": "Security",
+    "_domain": "cybersecurity"
+  },
+  {
+    "title": "Senior Shopify Developer",
+    "company": "Sanctuary Computer Inc",
+    "location": "Worldwide",
+    "experience": "0-2 years",
+    "salary": "₹8 - 18 LPA",
+    "skills": [
+      "admin",
+      "api",
+      "backend",
+      "CSS",
+      "frontend"
+    ],
+    "apply_url": "https://remotive.com/remote-jobs/software-development/senior-shopify-developer-2091140",
+    "domain": "Security",
+    "_domain": "cybersecurity"
+  },
+  {
+    "title": "🇩🇪 Kundenservice Mobilfunk Inbound - innerhalb der EU (ausgenommen: Deutschland)",
+    "company": "hey contact heroes GmbH",
+    "location": "Europe",
+    "experience": "0-2 years",
+    "salary": "₹8 - 18 LPA",
+    "skills": [
+      "Tech",
+      "Engineering"
+    ],
+    "apply_url": "https://remotive.com/remote-jobs/customer-service/kundenservice-mobilfunk-inbound-innerhalb-der-eu-ausgenommen-deutschland-2091139",
+    "domain": "Software Engineering",
+    "_domain": "cse"
+  },
+  {
+    "title": "Senior AI Engineer",
+    "company": "Lemon.io",
+    "location": "Northern America, LATAM, Europe, APAC",
+    "experience": "0-2 years",
+    "salary": "₹8 - 18 LPA",
+    "skills": [
+      ".Net",
+      "android",
+      "C",
+      "C#",
+      "C++"
+    ],
+    "apply_url": "https://remotive.com/remote-jobs/artificial-intelligence/senior-ai-engineer-2091131",
+    "domain": "AI / Data",
+    "_domain": "aiml"
+  },
+  {
+    "title": "Senior .NET Full-stack Developer",
+    "company": "Lemon.io",
+    "location": "Northern America, LATAM, Europe, APAC",
+    "experience": "0-2 years",
+    "salary": "₹8 - 18 LPA",
+    "skills": [
+      ".Net",
+      "android",
+      "C",
+      "C#",
+      "C++"
+    ],
+    "apply_url": "https://remotive.com/remote-jobs/software-development/senior-net-full-stack-developer-2091130",
+    "domain": "AI / Data",
+    "_domain": "aiml"
+  },
+  {
+    "title": "Senior Data Scientist",
+    "company": "Lemon.io",
+    "location": "Northern America, LATAM, Europe, APAC",
+    "experience": "0-2 years",
+    "salary": "₹8 - 18 LPA",
+    "skills": [
+      ".Net",
+      "android",
+      "C",
+      "C#",
+      "C++"
+    ],
+    "apply_url": "https://remotive.com/remote-jobs/data/senior-data-scientist-2091129",
+    "domain": "AI / Data",
+    "_domain": "aiml"
+  },
+  {
     "title": "Junior SOC Analyst (L1)",
     "company": "Tata Consultancy Services (TCS)",
     "location": "Bangalore / Hybrid",
     "experience": "Fresher (0-1 yr)",
     "salary": "₹4.5 - 7 LPA",
-    "skills": ["SIEM", "Splunk", "Incident Response", "Network Security", "Wireshark"],
+    "skills": [
+      "SIEM",
+      "Splunk",
+      "Incident Response",
+      "Network Security",
+      "Wireshark"
+    ],
     "apply_url": "https://ibegin.tcs.com/iBegin/jobs/search",
     "domain": "SOC Analyst",
     "_domain": "cybersecurity"
@@ -16,7 +121,13 @@
     "location": "Hyderabad / Remote",
     "experience": "Fresher (0-2 yrs)",
     "salary": "₹5.0 - 8.5 LPA",
-    "skills": ["Burp Suite", "OWASP Top 10", "Web VAPT", "Penetration Testing", "Nmap"],
+    "skills": [
+      "Burp Suite",
+      "OWASP Top 10",
+      "Web VAPT",
+      "Penetration Testing",
+      "Nmap"
+    ],
     "apply_url": "https://careers.wipro.com/careers-home",
     "domain": "VAPT Web",
     "_domain": "cybersecurity"
@@ -27,7 +138,13 @@
     "location": "Pune",
     "experience": "0-1 years",
     "salary": "₹5.5 - 9 LPA",
-    "skills": ["DFIR", "Threat Hunting", "EDR", "SentinelOne", "Log Analysis"],
+    "skills": [
+      "DFIR",
+      "Threat Hunting",
+      "EDR",
+      "SentinelOne",
+      "Log Analysis"
+    ],
     "apply_url": "https://career.infosys.com/",
     "domain": "DFIR",
     "_domain": "cybersecurity"
@@ -38,7 +155,13 @@
     "location": "Noida / Delhi NCR",
     "experience": "0-2 years",
     "salary": "₹5.0 - 8 LPA",
-    "skills": ["AWS Security", "DevSecOps", "Docker", "CI/CD Security", "SonarQube"],
+    "skills": [
+      "AWS Security",
+      "DevSecOps",
+      "Docker",
+      "CI/CD Security",
+      "SonarQube"
+    ],
     "apply_url": "https://www.hcltech.com/careers",
     "domain": "Cloud Security",
     "_domain": "cybersecurity"
@@ -49,7 +172,13 @@
     "location": "Gurgaon / Hyderabad",
     "experience": "Fresher (0-1 yr)",
     "salary": "₹4.8 - 7.5 LPA",
-    "skills": ["ISO 27001", "Vulnerability Management", "IAM", "Python", "Firewalls"],
+    "skills": [
+      "ISO 27001",
+      "Vulnerability Management",
+      "IAM",
+      "Python",
+      "Firewalls"
+    ],
     "apply_url": "https://www.accenture.com/in-en/careers",
     "domain": "Information Security",
     "_domain": "cybersecurity"
@@ -60,7 +189,13 @@
     "location": "Bangalore",
     "experience": "Fresher (2025/2026 Batch)",
     "salary": "₹9 - 14 LPA",
-    "skills": ["CCNA", "TCP/IP", "Linux", "Firewalls", "Python"],
+    "skills": [
+      "CCNA",
+      "TCP/IP",
+      "Linux",
+      "Firewalls",
+      "Python"
+    ],
     "apply_url": "https://jobs.cisco.com/jobs/SearchJobs/?21178=%5B16948%5D&21178_format=6020&listFilterMode=1",
     "domain": "Network Security",
     "_domain": "cybersecurity"
@@ -71,7 +206,13 @@
     "location": "Chennai",
     "experience": "Fresher",
     "salary": "₹4.5 - 6.5 LPA",
-    "skills": ["SAST", "DAST", "OWASP", "Java", "Git"],
+    "skills": [
+      "SAST",
+      "DAST",
+      "OWASP",
+      "Java",
+      "Git"
+    ],
     "apply_url": "https://careers.cognizant.com/global/en",
     "domain": "AppSec",
     "_domain": "cybersecurity"
@@ -82,7 +223,13 @@
     "location": "Mumbai / Remote",
     "experience": "1-3 years",
     "salary": "₹6 - 10 LPA",
-    "skills": ["Splunk", "QRadar", "MITRE ATT&CK", "Threat Intel", "Python"],
+    "skills": [
+      "Splunk",
+      "QRadar",
+      "MITRE ATT&CK",
+      "Threat Intel",
+      "Python"
+    ],
     "apply_url": "https://careers.techmahindra.com/",
     "domain": "Threat Intelligence",
     "_domain": "cybersecurity"
@@ -93,7 +240,13 @@
     "location": "Hyderabad / Bangalore",
     "experience": "0-2 years",
     "salary": "₹6.5 - 11 LPA",
-    "skills": ["SIEM", "Microsoft Sentinel", "Log Analysis", "Incident Triage", "KQL"],
+    "skills": [
+      "SIEM",
+      "Microsoft Sentinel",
+      "Log Analysis",
+      "Incident Triage",
+      "KQL"
+    ],
     "apply_url": "https://jobsindia.deloitte.com/",
     "domain": "SOC Operations",
     "_domain": "cybersecurity"
@@ -104,7 +257,13 @@
     "location": "Bangalore / Remote",
     "experience": "0-2 years",
     "salary": "₹12 - 20 LPA",
-    "skills": ["AppSec", "OWASP Top 10", "Threat Modeling", "Web Security", "Python"],
+    "skills": [
+      "AppSec",
+      "OWASP Top 10",
+      "Threat Modeling",
+      "Web Security",
+      "Python"
+    ],
     "apply_url": "https://razorpay.com/jobs/",
     "domain": "Product Security",
     "_domain": "cybersecurity"
@@ -115,7 +274,13 @@
     "location": "Kolkata / Gurgaon",
     "experience": "Fresher (0-1 yr)",
     "salary": "₹5.2 - 8 LPA",
-    "skills": ["DFIR", "Malware Analysis", "Windows Internals", "Wireshark", "Memory Forensics"],
+    "skills": [
+      "DFIR",
+      "Malware Analysis",
+      "Windows Internals",
+      "Wireshark",
+      "Memory Forensics"
+    ],
     "apply_url": "https://www.pwc.in/careers.html",
     "domain": "DFIR",
     "_domain": "cybersecurity"
@@ -126,7 +291,13 @@
     "location": "Bangalore",
     "experience": "0-2 years",
     "salary": "₹14 - 24 LPA",
-    "skills": ["Prisma Cloud", "CSPM", "Kubernetes Security", "Linux", "Python"],
+    "skills": [
+      "Prisma Cloud",
+      "CSPM",
+      "Kubernetes Security",
+      "Linux",
+      "Python"
+    ],
     "apply_url": "https://jobs.paloaltonetworks.com/",
     "domain": "Cloud Security",
     "_domain": "cybersecurity"
@@ -137,7 +308,13 @@
     "location": "Mumbai / Navi Mumbai",
     "experience": "Fresher / 0-2 yrs",
     "salary": "₹7 - 12 LPA",
-    "skills": ["Python", "PyTorch", "HuggingFace", "LangChain", "RAG"],
+    "skills": [
+      "Python",
+      "PyTorch",
+      "HuggingFace",
+      "LangChain",
+      "RAG"
+    ],
     "apply_url": "https://careers.jio.com/",
     "domain": "ML Engineer",
     "_domain": "aiml"
@@ -148,7 +325,13 @@
     "location": "Bangalore",
     "experience": "Fresher",
     "salary": "₹6 - 9 LPA",
-    "skills": ["Python", "Statistics", "Machine Learning", "SQL", "Data Modeling"],
+    "skills": [
+      "Python",
+      "Statistics",
+      "Machine Learning",
+      "SQL",
+      "Data Modeling"
+    ],
     "apply_url": "https://www.mu-sigma.com/careers",
     "domain": "Data Science",
     "_domain": "aiml"
@@ -159,7 +342,13 @@
     "location": "Bangalore / Remote",
     "experience": "0-1 years",
     "salary": "₹8 - 14 LPA",
-    "skills": ["SQL", "Power BI", "Tableau", "Python", "Data Visualization"],
+    "skills": [
+      "SQL",
+      "Power BI",
+      "Tableau",
+      "Python",
+      "Data Visualization"
+    ],
     "apply_url": "https://www.flipkartcareers.com/",
     "domain": "Data Analyst",
     "_domain": "aiml"
@@ -170,7 +359,13 @@
     "location": "Bangalore / Remote",
     "experience": "0-2 years",
     "salary": "₹10 - 16 LPA",
-    "skills": ["Python", "Apache Spark", "Kafka", "SQL", "Airflow"],
+    "skills": [
+      "Python",
+      "Apache Spark",
+      "Kafka",
+      "SQL",
+      "Airflow"
+    ],
     "apply_url": "https://careers.swiggy.com/",
     "domain": "Data Engineering",
     "_domain": "aiml"
@@ -181,7 +376,13 @@
     "location": "Gurgaon / Remote",
     "experience": "Fresher (0-1 yr)",
     "salary": "₹8 - 13 LPA",
-    "skills": ["Python", "OpenAI API", "LangChain", "Vector DBs", "Prompt Engineering"],
+    "skills": [
+      "Python",
+      "OpenAI API",
+      "LangChain",
+      "Vector DBs",
+      "Prompt Engineering"
+    ],
     "apply_url": "https://www.zomato.com/careers",
     "domain": "GenAI / LLM",
     "_domain": "aiml"
@@ -192,7 +393,13 @@
     "location": "Bangalore / Pune",
     "experience": "0-2 years",
     "salary": "₹5.5 - 8.5 LPA",
-    "skills": ["OpenCV", "Python", "PyTorch", "CNN", "Deep Learning"],
+    "skills": [
+      "OpenCV",
+      "Python",
+      "PyTorch",
+      "CNN",
+      "Deep Learning"
+    ],
     "apply_url": "https://www.tataelxsi.com/careers",
     "domain": "Computer Vision",
     "_domain": "aiml"
@@ -203,7 +410,13 @@
     "location": "Bangalore",
     "experience": "0-2 years",
     "salary": "₹7 - 12 LPA",
-    "skills": ["SQL", "Looker", "Metabase", "Excel", "Data Modeling"],
+    "skills": [
+      "SQL",
+      "Looker",
+      "Metabase",
+      "Excel",
+      "Data Modeling"
+    ],
     "apply_url": "https://www.meesho.io/jobs",
     "domain": "BI Analyst",
     "_domain": "aiml"
@@ -214,7 +427,13 @@
     "location": "Bangalore / Hybrid",
     "experience": "1-3 years",
     "salary": "₹11 - 18 LPA",
-    "skills": ["Python", "MLflow", "Docker", "Kubernetes", "AWS SageMaker"],
+    "skills": [
+      "Python",
+      "MLflow",
+      "Docker",
+      "Kubernetes",
+      "AWS SageMaker"
+    ],
     "apply_url": "https://www.inmobi.com/company/careers/",
     "domain": "MLOps",
     "_domain": "aiml"
@@ -225,7 +444,13 @@
     "location": "Bangalore",
     "experience": "0-2 years",
     "salary": "₹14 - 24 LPA",
-    "skills": ["Python", "SQL", "Predictive Modeling", "Scikit-Learn", "Feature Engineering"],
+    "skills": [
+      "Python",
+      "SQL",
+      "Predictive Modeling",
+      "Scikit-Learn",
+      "Feature Engineering"
+    ],
     "apply_url": "https://cred.club/careers",
     "domain": "Data Science",
     "_domain": "aiml"
@@ -236,7 +461,13 @@
     "location": "Bangalore",
     "experience": "Fresher (2025/2026 Batch)",
     "salary": "₹18 - 32 LPA",
-    "skills": ["Deep Learning", "PyTorch", "Transformers", "Algorithms", "Linear Algebra"],
+    "skills": [
+      "Deep Learning",
+      "PyTorch",
+      "Transformers",
+      "Algorithms",
+      "Linear Algebra"
+    ],
     "apply_url": "https://careers.microsoft.com/",
     "domain": "AI Research",
     "_domain": "aiml"
@@ -247,7 +478,13 @@
     "location": "Gurgaon / Chennai",
     "experience": "Fresher",
     "salary": "₹4.5 - 7 LPA",
-    "skills": ["SQL", "Power BI", "Advanced Excel", "Python", "Statistics"],
+    "skills": [
+      "SQL",
+      "Power BI",
+      "Advanced Excel",
+      "Python",
+      "Statistics"
+    ],
     "apply_url": "https://www.ey.com/en_in/careers",
     "domain": "Data Analyst",
     "_domain": "aiml"
@@ -258,7 +495,13 @@
     "location": "Mumbai / Bangalore",
     "experience": "0-1 years",
     "salary": "₹7.5 - 12 LPA",
-    "skills": ["LangChain", "Claude/Gemini API", "Python", "Evaluation", "Prompt Tuning"],
+    "skills": [
+      "LangChain",
+      "Claude/Gemini API",
+      "Python",
+      "Evaluation",
+      "Prompt Tuning"
+    ],
     "apply_url": "https://www.zeptonow.com/careers",
     "domain": "GenAI / LLM",
     "_domain": "aiml"
@@ -269,7 +512,13 @@
     "location": "Hyderabad / Bangalore",
     "experience": "Fresher (2025/2026 Batch)",
     "salary": "₹16 - 28 LPA",
-    "skills": ["Java", "DSA", "System Design", "OOPs", "Algorithms"],
+    "skills": [
+      "Java",
+      "DSA",
+      "System Design",
+      "OOPs",
+      "Algorithms"
+    ],
     "apply_url": "https://www.amazon.jobs/en/teams/in",
     "domain": "SDE Core",
     "_domain": "cse"
@@ -280,7 +529,13 @@
     "location": "Noida / Delhi NCR",
     "experience": "Fresher",
     "salary": "₹4.25 - 6.5 LPA",
-    "skills": ["C++", "Java", "SQL", "Data Structures", "Linux"],
+    "skills": [
+      "C++",
+      "Java",
+      "SQL",
+      "Data Structures",
+      "Linux"
+    ],
     "apply_url": "https://www.hcltech.com/careers",
     "domain": "Software Engineering",
     "_domain": "cse"
@@ -291,7 +546,13 @@
     "location": "Gurgaon / Hyderabad",
     "experience": "0-1 years",
     "salary": "₹5.5 - 8.5 LPA",
-    "skills": ["AWS", "Docker", "Kubernetes", "Linux", "CI/CD"],
+    "skills": [
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Linux",
+      "CI/CD"
+    ],
     "apply_url": "https://www.accenture.com/in-en/careers",
     "domain": "Cloud & DevOps",
     "_domain": "cse"
@@ -302,7 +563,13 @@
     "location": "Gurgaon / Remote",
     "experience": "0-2 years",
     "salary": "₹9 - 15 LPA",
-    "skills": ["React.js", "TypeScript", "Node.js", "HTML5/CSS3", "REST APIs"],
+    "skills": [
+      "React.js",
+      "TypeScript",
+      "Node.js",
+      "HTML5/CSS3",
+      "REST APIs"
+    ],
     "apply_url": "https://www.zomato.com/careers",
     "domain": "Full Stack",
     "_domain": "cse"
@@ -313,7 +580,13 @@
     "location": "Bangalore",
     "experience": "0-2 years",
     "salary": "₹12 - 18 LPA",
-    "skills": ["Flutter", "Dart", "Android SDK", "REST APIs", "State Management"],
+    "skills": [
+      "Flutter",
+      "Dart",
+      "Android SDK",
+      "REST APIs",
+      "State Management"
+    ],
     "apply_url": "https://www.phonepe.com/careers/",
     "domain": "Mobile Development",
     "_domain": "cse"
@@ -324,7 +597,13 @@
     "location": "Noida / Bangalore",
     "experience": "0-2 years",
     "salary": "₹7 - 12 LPA",
-    "skills": ["Java", "Spring Boot", "MySQL", "Redis", "Microservices"],
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "MySQL",
+      "Redis",
+      "Microservices"
+    ],
     "apply_url": "https://paytm.com/careers",
     "domain": "Backend SDE",
     "_domain": "cse"
@@ -335,7 +614,13 @@
     "location": "Pune / Mumbai",
     "experience": "Fresher",
     "salary": "₹4.2 - 6.8 LPA",
-    "skills": ["Linux", "Shell Scripting", "Azure", "Git", "Networking"],
+    "skills": [
+      "Linux",
+      "Shell Scripting",
+      "Azure",
+      "Git",
+      "Networking"
+    ],
     "apply_url": "https://www.capgemini.com/in-en/careers/",
     "domain": "Systems & Cloud",
     "_domain": "cse"
@@ -346,7 +631,13 @@
     "location": "Pune / Hyderabad",
     "experience": "Fresher (0-1 yr)",
     "salary": "₹4.5 - 7.5 LPA",
-    "skills": ["JavaScript", "React", "Node.js", "MongoDB", "Git"],
+    "skills": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Git"
+    ],
     "apply_url": "https://www.persistent.com/careers/",
     "domain": "Full Stack",
     "_domain": "cse"
@@ -357,7 +648,13 @@
     "location": "Hyderabad / Bangalore",
     "experience": "Fresher (2025/2026 Batch)",
     "salary": "₹18 - 35 LPA",
-    "skills": ["Data Structures", "Algorithms", "C++", "Java", "Systems Programming"],
+    "skills": [
+      "Data Structures",
+      "Algorithms",
+      "C++",
+      "Java",
+      "Systems Programming"
+    ],
     "apply_url": "https://www.google.com/about/careers/applications/jobs/results/?location=India",
     "domain": "SDE Core",
     "_domain": "cse"
@@ -368,7 +665,14 @@
     "location": "Bangalore",
     "experience": "0-2 years",
     "salary": "₹11 - 18 LPA",
-    "skills": ["Linux", "Golang", "Python", "Docker", "Kubernetes", "Terraform"],
+    "skills": [
+      "Linux",
+      "Golang",
+      "Python",
+      "Docker",
+      "Kubernetes",
+      "Terraform"
+    ],
     "apply_url": "https://jobs.cisco.com/",
     "domain": "Cloud & DevOps",
     "_domain": "cse"
@@ -379,7 +683,13 @@
     "location": "Mumbai / Bangalore",
     "experience": "0-2 years",
     "salary": "₹10 - 16 LPA",
-    "skills": ["Golang", "PostgreSQL", "Redis", "Kafka", "Distributed Systems"],
+    "skills": [
+      "Golang",
+      "PostgreSQL",
+      "Redis",
+      "Kafka",
+      "Distributed Systems"
+    ],
     "apply_url": "https://www.zeptonow.com/careers",
     "domain": "Backend SDE",
     "_domain": "cse"
@@ -390,7 +700,13 @@
     "location": "Hyderabad / Bangalore",
     "experience": "Fresher (0-1 yr)",
     "salary": "₹13 - 22 LPA",
-    "skills": ["C", "Linux Kernel", "RTOS", "Device Drivers", "Embedded C"],
+    "skills": [
+      "C",
+      "Linux Kernel",
+      "RTOS",
+      "Device Drivers",
+      "Embedded C"
+    ],
     "apply_url": "https://www.qualcomm.com/company/careers",
     "domain": "Embedded & Systems",
     "_domain": "cse"

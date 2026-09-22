@@ -58,6 +58,105 @@ let isLoading    = false;
 // ── Curated Verified Jobs (Runs Out-of-the-Box without API Key) ───────────
 const VERIFIED_JOBS = [
   {
+    "title": "Frontend Web Application Developer",
+    "company": "KoboToolbox",
+    "location": "USA, Canada, Argentina, Mexico, Peru",
+    "experience": "0-2 years",
+    "salary": "₹8 - 18 LPA",
+    "skills": [
+      "api",
+      "django",
+      "docker",
+      "frontend",
+      "git"
+    ],
+    "apply_url": "https://remotive.com/remote-jobs/design/frontend-web-application-developer-2091141",
+    "domain": "Security",
+    "_domain": "cybersecurity"
+  },
+  {
+    "title": "Senior Shopify Developer",
+    "company": "Sanctuary Computer Inc",
+    "location": "Worldwide",
+    "experience": "0-2 years",
+    "salary": "₹8 - 18 LPA",
+    "skills": [
+      "admin",
+      "api",
+      "backend",
+      "CSS",
+      "frontend"
+    ],
+    "apply_url": "https://remotive.com/remote-jobs/software-development/senior-shopify-developer-2091140",
+    "domain": "Security",
+    "_domain": "cybersecurity"
+  },
+  {
+    "title": "🇩🇪 Kundenservice Mobilfunk Inbound - innerhalb der EU (ausgenommen: Deutschland)",
+    "company": "hey contact heroes GmbH",
+    "location": "Europe",
+    "experience": "0-2 years",
+    "salary": "₹8 - 18 LPA",
+    "skills": [
+      "Tech",
+      "Engineering"
+    ],
+    "apply_url": "https://remotive.com/remote-jobs/customer-service/kundenservice-mobilfunk-inbound-innerhalb-der-eu-ausgenommen-deutschland-2091139",
+    "domain": "Software Engineering",
+    "_domain": "cse"
+  },
+  {
+    "title": "Senior AI Engineer",
+    "company": "Lemon.io",
+    "location": "Northern America, LATAM, Europe, APAC",
+    "experience": "0-2 years",
+    "salary": "₹8 - 18 LPA",
+    "skills": [
+      ".Net",
+      "android",
+      "C",
+      "C#",
+      "C++"
+    ],
+    "apply_url": "https://remotive.com/remote-jobs/artificial-intelligence/senior-ai-engineer-2091131",
+    "domain": "AI / Data",
+    "_domain": "aiml"
+  },
+  {
+    "title": "Senior .NET Full-stack Developer",
+    "company": "Lemon.io",
+    "location": "Northern America, LATAM, Europe, APAC",
+    "experience": "0-2 years",
+    "salary": "₹8 - 18 LPA",
+    "skills": [
+      ".Net",
+      "android",
+      "C",
+      "C#",
+      "C++"
+    ],
+    "apply_url": "https://remotive.com/remote-jobs/software-development/senior-net-full-stack-developer-2091130",
+    "domain": "AI / Data",
+    "_domain": "aiml"
+  },
+  {
+    "title": "Senior Data Scientist",
+    "company": "Lemon.io",
+    "location": "Northern America, LATAM, Europe, APAC",
+    "experience": "0-2 years",
+    "salary": "₹8 - 18 LPA",
+    "skills": [
+      ".Net",
+      "android",
+      "C",
+      "C#",
+      "C++"
+    ],
+    "apply_url": "https://remotive.com/remote-jobs/data/senior-data-scientist-2091129",
+    "domain": "AI / Data",
+    "_domain": "aiml"
+  },
+  {
     "title": "Junior SOC Analyst (L1)",
     "company": "Tata Consultancy Services (TCS)",
     "location": "Bangalore / Hybrid",
