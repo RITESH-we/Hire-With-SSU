@@ -13,6 +13,8 @@
 
 ## ✨ Key Features
 
+- **🏢 Top 100 Companies in India (By Domain):** Integrated directory of 110+ top tech companies in India broken down by **Cybersecurity (56)**, **AI/ML & DS (82)**, and **CSE Core (92)**, with one-click direct career portal links and role tags.
+
 - **⚡ Zero Setup / Free Mode:** Loads 40+ verified job openings immediately upon opening—**no API keys, login, or configuration required**.
 - **🔄 Automated Daily Refresh:** Runs on a scheduled GitHub Actions workflow every 24 hours at midnight to fetch fresh tech postings automatically.
 - **📎 Direct Application Redirection:** Every single card is directly linked (`target="_blank"`) to official career portals (TCS iBegin, Amazon Jobs, Google Careers, Wipro, Infosys, Flipkart, Jio, Swiggy, Zomato, PhonePe, etc.).
