@@ -772,6 +772,1359 @@ const VERIFIED_JOBS = [
 ];
 
 // ── API config ─────────────────────────────────────────────────────────────
+const TOP100_COMPANIES = [
+  {
+    "name": "Palo Alto Networks India",
+    "category": "Cyber & Cloud",
+    "cat_key": "cyber",
+    "domains": [
+      "cybersecurity",
+      "cse"
+    ],
+    "hiring_roles": "Prisma Cloud, CSPM, SOC, Network Security",
+    "location": "Bangalore",
+    "career_url": "https://jobs.paloaltonetworks.com/"
+  },
+  {
+    "name": "CrowdStrike India",
+    "category": "Cyber & Cloud",
+    "cat_key": "cyber",
+    "domains": [
+      "cybersecurity",
+      "cse"
+    ],
+    "hiring_roles": "Falcon EDR, Threat Hunting, Detection Eng, Golang",
+    "location": "Pune / Remote",
+    "career_url": "https://www.crowdstrike.com/careers/"
+  },
+  {
+    "name": "Cloudflare India",
+    "category": "Cyber & Cloud",
+    "cat_key": "cyber",
+    "domains": [
+      "cybersecurity",
+      "cse"
+    ],
+    "hiring_roles": "DDoS Defense, Edge Security, Systems Eng, Rust",
+    "location": "Bangalore / Remote",
+    "career_url": "https://www.cloudflare.com/careers/"
+  },
+  {
+    "name": "Fortinet India",
+    "category": "Cyber & Cloud",
+    "cat_key": "cyber",
+    "domains": [
+      "cybersecurity"
+    ],
+    "hiring_roles": "FortiGate, Network Security, Firewall, Threat Intel",
+    "location": "Bangalore",
+    "career_url": "https://www.fortinet.com/corporate/careers"
+  },
+  {
+    "name": "Trend Micro India",
+    "category": "Cyber & Cloud",
+    "cat_key": "cyber",
+    "domains": [
+      "cybersecurity"
+    ],
+    "hiring_roles": "XDR, Endpoint Security, Malware Analysis, Python",
+    "location": "Bangalore, Mumbai",
+    "career_url": "https://www.trendmicro.com/en_in/about/careers.html"
+  },
+  {
+    "name": "SentinelOne India",
+    "category": "Cyber & Cloud",
+    "cat_key": "cyber",
+    "domains": [
+      "cybersecurity",
+      "aiml"
+    ],
+    "hiring_roles": "Autonomous AI Cyber, EDR, SIEM, Threat Hunting",
+    "location": "Bangalore / Remote",
+    "career_url": "https://www.sentinelone.com/careers/"
+  },
+  {
+    "name": "Zscaler India",
+    "category": "Cyber & Cloud",
+    "cat_key": "cyber",
+    "domains": [
+      "cybersecurity",
+      "cse"
+    ],
+    "hiring_roles": "Zero Trust (ZTNA), Cloud Security, SASE, Systems",
+    "location": "Bangalore, Chandigarh",
+    "career_url": "https://www.zscaler.com/careers"
+  },
+  {
+    "name": "Sophos India",
+    "category": "Cyber & Cloud",
+    "cat_key": "cyber",
+    "domains": [
+      "cybersecurity"
+    ],
+    "hiring_roles": "MDR, Threat Analysis, Firewall OS, C/C++",
+    "location": "Ahmedabad, Bangalore",
+    "career_url": "https://www.sophos.com/en-us/company/careers"
+  },
+  {
+    "name": "Qualys India",
+    "category": "Cyber & Cloud",
+    "cat_key": "cyber",
+    "domains": [
+      "cybersecurity",
+      "cse"
+    ],
+    "hiring_roles": "Vulnerability Management, VMDR, Cloud Security",
+    "location": "Pune",
+    "career_url": "https://www.qualys.com/company/careers/"
+  },
+  {
+    "name": "Akamai Technologies India",
+    "category": "Cyber & Cloud",
+    "cat_key": "cyber",
+    "domains": [
+      "cybersecurity",
+      "cse"
+    ],
+    "hiring_roles": "WAF, API Security, DDoS Mitigation, Linux",
+    "location": "Bangalore",
+    "career_url": "https://www.akamai.com/careers"
+  },
+  {
+    "name": "Check Point India",
+    "category": "Cyber & Cloud",
+    "cat_key": "cyber",
+    "domains": [
+      "cybersecurity"
+    ],
+    "hiring_roles": "Threat Prevention, CloudGuard, Cyber Intelligence",
+    "location": "Bangalore, Delhi",
+    "career_url": "https://www.checkpoint.com/careers/"
+  },
+  {
+    "name": "F5 Networks India",
+    "category": "Cyber & Cloud",
+    "cat_key": "cyber",
+    "domains": [
+      "cybersecurity",
+      "cse"
+    ],
+    "hiring_roles": "AppSec, NGINX, API Security, Distributed Cloud",
+    "location": "Hyderabad",
+    "career_url": "https://www.f5.com/company/careers"
+  },
+  {
+    "name": "Tenable India",
+    "category": "Cyber & Cloud",
+    "cat_key": "cyber",
+    "domains": [
+      "cybersecurity"
+    ],
+    "hiring_roles": "Nessus, Vulnerability Exposure, Cloud Security",
+    "location": "Bangalore / Remote",
+    "career_url": "https://www.tenable.com/careers"
+  },
+  {
+    "name": "Rapid7 India",
+    "category": "Cyber & Cloud",
+    "cat_key": "cyber",
+    "domains": [
+      "cybersecurity"
+    ],
+    "hiring_roles": "Metasploit, InsightIDR, SIEM, Penetration Testing",
+    "location": "Bangalore / Remote",
+    "career_url": "https://www.rapid7.com/about/careers/"
+  },
+  {
+    "name": "Deloitte Cyber",
+    "category": "Cyber & Cloud",
+    "cat_key": "cyber",
+    "domains": [
+      "cybersecurity"
+    ],
+    "hiring_roles": "SOC Specialist, Microsoft Sentinel, Incident Response",
+    "location": "Hyderabad, Bangalore, Gurgaon",
+    "career_url": "https://jobsindia.deloitte.com/"
+  },
+  {
+    "name": "PwC India Cyber",
+    "category": "Cyber & Cloud",
+    "cat_key": "cyber",
+    "domains": [
+      "cybersecurity"
+    ],
+    "hiring_roles": "DFIR, Threat Hunting, ISO 27001, Vulnerability Mgmt",
+    "location": "Kolkata, Gurgaon, Bangalore",
+    "career_url": "https://www.pwc.in/careers.html"
+  },
+  {
+    "name": "EY India InfoSec",
+    "category": "Cyber & Cloud",
+    "cat_key": "cyber",
+    "domains": [
+      "cybersecurity"
+    ],
+    "hiring_roles": "Threat Intelligence, IAM, Cloud Security, Cyber Risk",
+    "location": "Gurgaon, Bangalore, Chennai",
+    "career_url": "https://www.ey.com/en_in/careers"
+  },
+  {
+    "name": "KPMG Cyber Security",
+    "category": "Cyber & Cloud",
+    "cat_key": "cyber",
+    "domains": [
+      "cybersecurity"
+    ],
+    "hiring_roles": "GRC, Penetration Testing, Red Teaming, VAPT",
+    "location": "Mumbai, Bangalore, Gurgaon",
+    "career_url": "https://kpmg.com/in/en/home/careers.html"
+  },
+  {
+    "name": "Jio Platforms (Jio AI)",
+    "category": "AI & Analytics",
+    "cat_key": "ai",
+    "domains": [
+      "aiml",
+      "cse"
+    ],
+    "hiring_roles": "LLM Fine-tuning, NLP, GenAI, Speech AI, RAG",
+    "location": "Mumbai, Navi Mumbai, Bangalore",
+    "career_url": "https://careers.jio.com/"
+  },
+  {
+    "name": "Mu Sigma",
+    "category": "AI & Analytics",
+    "cat_key": "ai",
+    "domains": [
+      "aiml"
+    ],
+    "hiring_roles": "Data Science, Machine Learning, Decision Analytics",
+    "location": "Bangalore",
+    "career_url": "https://www.mu-sigma.com/careers"
+  },
+  {
+    "name": "Fractal Analytics",
+    "category": "AI & Analytics",
+    "cat_key": "ai",
+    "domains": [
+      "aiml"
+    ],
+    "hiring_roles": "GenAI, Computer Vision, Deep Learning, MLOps",
+    "location": "Mumbai, Bangalore, Gurgaon",
+    "career_url": "https://fractal.ai/careers/"
+  },
+  {
+    "name": "Tiger Analytics",
+    "category": "AI & Analytics",
+    "cat_key": "ai",
+    "domains": [
+      "aiml"
+    ],
+    "hiring_roles": "Data Science, Big Data, Predictive Modeling, Spark",
+    "location": "Chennai, Bangalore, Hyderabad",
+    "career_url": "https://www.tigeranalytics.com/careers/"
+  },
+  {
+    "name": "LatentView Analytics",
+    "category": "AI & Analytics",
+    "cat_key": "ai",
+    "domains": [
+      "aiml"
+    ],
+    "hiring_roles": "Data Engineering, BI Analytics, Supply Chain ML",
+    "location": "Chennai, Bangalore",
+    "career_url": "https://www.latentview.com/careers/"
+  },
+  {
+    "name": "Tata Elxsi",
+    "category": "AI & Analytics",
+    "cat_key": "ai",
+    "domains": [
+      "aiml",
+      "cse"
+    ],
+    "hiring_roles": "Autonomous AI, Computer Vision, Edge AI, CNN",
+    "location": "Bangalore, Pune, Trivandrum",
+    "career_url": "https://www.tataelxsi.com/careers"
+  },
+  {
+    "name": "Quantiphi",
+    "category": "AI & Analytics",
+    "cat_key": "ai",
+    "domains": [
+      "aiml"
+    ],
+    "hiring_roles": "Google Vertex AI, AWS SageMaker, NLP, Transformers",
+    "location": "Mumbai, Bangalore",
+    "career_url": "https://quantiphi.com/careers/"
+  },
+  {
+    "name": "Celebal Technologies",
+    "category": "AI & Analytics",
+    "cat_key": "ai",
+    "domains": [
+      "aiml",
+      "cse"
+    ],
+    "hiring_roles": "Azure OpenAI, Databricks, Big Data Engineering",
+    "location": "Jaipur, Pune, Noida",
+    "career_url": "https://celebaltech.com/careers"
+  },
+  {
+    "name": "EXL Service Analytics",
+    "category": "AI & Analytics",
+    "cat_key": "ai",
+    "domains": [
+      "aiml"
+    ],
+    "hiring_roles": "Healthcare Analytics, Banking Risk ML, Python",
+    "location": "Noida, Gurgaon, Bangalore",
+    "career_url": "https://www.exlservice.com/careers"
+  },
+  {
+    "name": "Genpact AI & Analytics",
+    "category": "AI & Analytics",
+    "cat_key": "ai",
+    "domains": [
+      "aiml"
+    ],
+    "hiring_roles": "GenAI Workflows, ML Pipeline, Data Science",
+    "location": "Gurgaon, Noida, Hyderabad",
+    "career_url": "https://www.genpact.com/careers"
+  },
+  {
+    "name": "Tredence",
+    "category": "AI & Analytics",
+    "cat_key": "ai",
+    "domains": [
+      "aiml"
+    ],
+    "hiring_roles": "Retail ML, Data Engineering, Python, Databricks",
+    "location": "Bangalore",
+    "career_url": "https://www.tredence.com/careers"
+  },
+  {
+    "name": "Course5 Intelligence",
+    "category": "AI & Analytics",
+    "cat_key": "ai",
+    "domains": [
+      "aiml"
+    ],
+    "hiring_roles": "Customer AI, NLP Sentiment, Predictive Modeling",
+    "location": "Mumbai, Bangalore",
+    "career_url": "https://www.course5i.com/careers/"
+  },
+  {
+    "name": "Nvidia AI India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "aiml",
+      "cse"
+    ],
+    "hiring_roles": "CUDA, Deep Learning, TensorRT, LLM Optimization",
+    "location": "Bangalore, Pune, Hyderabad",
+    "career_url": "https://www.nvidia.com/en-us/about-nvidia/careers/"
+  },
+  {
+    "name": "Microsoft Research India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "aiml",
+      "cse"
+    ],
+    "hiring_roles": "AI Research, Transformers, Vision-Language, Algorithms",
+    "location": "Bangalore",
+    "career_url": "https://careers.microsoft.com/"
+  },
+  {
+    "name": "Google Research India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "aiml",
+      "cse"
+    ],
+    "hiring_roles": "Gemini, Multimodal AI, TensorFlow, AI for Social Good",
+    "location": "Bangalore",
+    "career_url": "https://www.google.com/about/careers/applications/jobs/results/?location=India"
+  },
+  {
+    "name": "Google India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "aiml",
+      "cybersecurity"
+    ],
+    "hiring_roles": "SDE-1, Cloud, Android, Distributed Systems, ML",
+    "location": "Bangalore, Hyderabad, Gurgaon",
+    "career_url": "https://www.google.com/about/careers/applications/jobs/results/?location=India"
+  },
+  {
+    "name": "Microsoft India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "aiml",
+      "cybersecurity"
+    ],
+    "hiring_roles": "Software Engineer, Azure, Copilot AI, Security",
+    "location": "Bangalore, Hyderabad, Noida",
+    "career_url": "https://careers.microsoft.com/"
+  },
+  {
+    "name": "Amazon India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "aiml",
+      "cybersecurity"
+    ],
+    "hiring_roles": "SDE-1, AWS Cloud, Applied Scientist, InfoSec",
+    "location": "Bangalore, Hyderabad, Chennai",
+    "career_url": "https://www.amazon.jobs/en/teams/in"
+  },
+  {
+    "name": "Cisco Systems India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "cybersecurity",
+      "aiml"
+    ],
+    "hiring_roles": "Networking, Firewalls, Cloud SRE, Python, C++",
+    "location": "Bangalore",
+    "career_url": "https://jobs.cisco.com/"
+  },
+  {
+    "name": "Adobe India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Computer Graphics, GenAI (Firefly), Full Stack Web",
+    "location": "Noida, Bangalore",
+    "career_url": "https://www.adobe.com/careers.html"
+  },
+  {
+    "name": "Oracle India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "aiml",
+      "cybersecurity"
+    ],
+    "hiring_roles": "OCI Cloud, Database Internals, Java, Identity Cloud",
+    "location": "Bangalore, Hyderabad, Pune",
+    "career_url": "https://www.oracle.com/corporate/careers/"
+  },
+  {
+    "name": "Apple India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "iOS/Swift, Siri AI, Cloud Infrastructure, Maps",
+    "location": "Bangalore, Hyderabad",
+    "career_url": "https://www.apple.com/careers/in/"
+  },
+  {
+    "name": "Intel India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "VLSI, Firmware, OpenVINO AI, Linux Kernel, C++",
+    "location": "Bangalore, Hyderabad",
+    "career_url": "https://jobs.intel.com/en"
+  },
+  {
+    "name": "Qualcomm India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Snapdragon Systems, Embedded Linux, RTOS, 5G",
+    "location": "Hyderabad, Bangalore, Chennai",
+    "career_url": "https://www.qualcomm.com/company/careers"
+  },
+  {
+    "name": "Salesforce India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Einstein AI, SaaS Microservices, Java, React",
+    "location": "Hyderabad, Bangalore, Mumbai",
+    "career_url": "https://salesforce.com/company/careers/"
+  },
+  {
+    "name": "Uber India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "High-Throughput Golang, Maps ML, Distributed Backend",
+    "location": "Hyderabad, Bangalore",
+    "career_url": "https://www.uber.com/in/en/careers/"
+  },
+  {
+    "name": "Atlassian India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "cybersecurity"
+    ],
+    "hiring_roles": "Jira/Confluence Cloud, React, Java, Security",
+    "location": "Bangalore / Remote",
+    "career_url": "https://www.atlassian.com/company/careers"
+  },
+  {
+    "name": "LinkedIn India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Graph DBs, Feed Ranking ML, Kafka, SDE",
+    "location": "Bangalore, Mumbai",
+    "career_url": "https://careers.linkedin.com/"
+  },
+  {
+    "name": "SAP Labs India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Enterprise Cloud, HANA, Business AI, ABAP/Java",
+    "location": "Bangalore, Pune, Gurgaon",
+    "career_url": "https://jobs.sap.com/"
+  },
+  {
+    "name": "VMware / Broadcom",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "cybersecurity"
+    ],
+    "hiring_roles": "Virtualization, Kubernetes, NSX Security, Kernel",
+    "location": "Bangalore, Pune",
+    "career_url": "https://careers.broadcom.com/"
+  },
+  {
+    "name": "Intuit India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "TurboTax AI, FinTech Cloud, Java, React, Microservices",
+    "location": "Bangalore",
+    "career_url": "https://www.intuit.com/careers/"
+  },
+  {
+    "name": "PayPal India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "cybersecurity",
+      "aiml"
+    ],
+    "hiring_roles": "Payments Engine, Fraud ML, AppSec, High Scale Java",
+    "location": "Chennai, Bangalore, Hyderabad",
+    "career_url": "https://careers.pypl.com/"
+  },
+  {
+    "name": "IBM India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "aiml",
+      "cybersecurity"
+    ],
+    "hiring_roles": "watsonx GenAI, Red Hat OpenShift, QRadar SIEM",
+    "location": "Bangalore, Hyderabad, Pune",
+    "career_url": "https://www.ibm.com/in-en/employment/"
+  },
+  {
+    "name": "AMD India",
+    "category": "MNC Tech Giant",
+    "cat_key": "mnc",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "ROCm AI Stack, GPU Drivers, Hardware Systems",
+    "location": "Bangalore, Hyderabad",
+    "career_url": "https://www.amd.com/en/corporate/careers.html"
+  },
+  {
+    "name": "Tata Consultancy Services (TCS)",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "cybersecurity",
+      "aiml"
+    ],
+    "hiring_roles": "Digital Ninja/Prime, SOC Analyst L1, Cloud AWS, Java",
+    "location": "Pan-India",
+    "career_url": "https://ibegin.tcs.com/iBegin/jobs/search"
+  },
+  {
+    "name": "Infosys",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "cybersecurity",
+      "aiml"
+    ],
+    "hiring_roles": "Specialist Programmer, DFIR, GenAI Topaz, Full Stack",
+    "location": "Bangalore, Pune, Hyderabad, Chennai",
+    "career_url": "https://career.infosys.com/"
+  },
+  {
+    "name": "Wipro",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "cybersecurity",
+      "aiml"
+    ],
+    "hiring_roles": "Turbo / Elite, VAPT Web, ai360, Cloud DevOps",
+    "location": "Bangalore, Hyderabad, Pune, Chennai",
+    "career_url": "https://careers.wipro.com/careers-home"
+  },
+  {
+    "name": "HCLTech",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "cybersecurity",
+      "aiml"
+    ],
+    "hiring_roles": "Graduate Trainee, Cloud Security, C++, Linux, AI Force",
+    "location": "Noida, Bangalore, Chennai, Pune",
+    "career_url": "https://www.hcltech.com/careers"
+  },
+  {
+    "name": "Tech Mahindra",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "cybersecurity",
+      "aiml"
+    ],
+    "hiring_roles": "Threat Intel, 5G Telecom Software, Java, Python",
+    "location": "Pune, Mumbai, Hyderabad, Bangalore",
+    "career_url": "https://careers.techmahindra.com/"
+  },
+  {
+    "name": "LTIMindtree",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "aiml",
+      "cybersecurity"
+    ],
+    "hiring_roles": "Data Engineering, Snowflake, Full Stack, InfoSec",
+    "location": "Mumbai, Bangalore, Pune, Chennai",
+    "career_url": "https://www.ltimindtree.com/careers/"
+  },
+  {
+    "name": "Cognizant",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "cybersecurity",
+      "aiml"
+    ],
+    "hiring_roles": "GenC Elevate/Next, AppSec, React, Python, Cloud",
+    "location": "Chennai, Bangalore, Hyderabad, Pune",
+    "career_url": "https://careers.cognizant.com/global/en"
+  },
+  {
+    "name": "Capgemini",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "cybersecurity",
+      "aiml"
+    ],
+    "hiring_roles": "Cloud DevOps, Systems Admin, Cyber Defense, Java",
+    "location": "Mumbai, Pune, Bangalore, Hyderabad",
+    "career_url": "https://www.capgemini.com/in-en/careers/"
+  },
+  {
+    "name": "Accenture",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "cybersecurity",
+      "aiml"
+    ],
+    "hiring_roles": "Advanced ASE, InfoSec Analyst, Cloud AWS, GenAI",
+    "location": "Bangalore, Hyderabad, Gurgaon, Pune",
+    "career_url": "https://www.accenture.com/in-en/careers"
+  },
+  {
+    "name": "Persistent Systems",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "aiml",
+      "cybersecurity"
+    ],
+    "hiring_roles": "Full Stack MERN, Cloud Platforms, AI Engineering",
+    "location": "Pune, Hyderabad, Bangalore",
+    "career_url": "https://www.persistent.com/careers/"
+  },
+  {
+    "name": "Coforge",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Travel & Banking Tech, Microservices, Data Science",
+    "location": "Noida, Bangalore, Hyderabad",
+    "career_url": "https://www.coforge.com/careers"
+  },
+  {
+    "name": "Hexaware Technologies",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "cybersecurity"
+    ],
+    "hiring_roles": "Automate Anything, Cloud App Modernization, Java",
+    "location": "Mumbai, Chennai, Bangalore, Pune",
+    "career_url": "https://hexaware.com/careers/"
+  },
+  {
+    "name": "Mphasis",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "NextLabs AI, Financial Services Tech, Cloud DevOps",
+    "location": "Bangalore, Pune, Chennai",
+    "career_url": "https://careers.mphasis.com/"
+  },
+  {
+    "name": "Birlasoft",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Enterprise Digital, SAP Cloud, Python Analytics",
+    "location": "Pune, Noida, Bangalore",
+    "career_url": "https://www.birlasoft.com/careers"
+  },
+  {
+    "name": "KPIT Technologies",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Automotive Software, AUTOSAR, ADAS AI, Embedded C",
+    "location": "Pune, Bangalore",
+    "career_url": "https://www.kpit.com/careers/"
+  },
+  {
+    "name": "Cyient",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "cybersecurity"
+    ],
+    "hiring_roles": "Intelligent Engineering, OT/IoT Security, Embedded",
+    "location": "Hyderabad, Bangalore",
+    "career_url": "https://careers.cyient.com/"
+  },
+  {
+    "name": "Tata Technologies",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "EV Platforms, Digital Twin AI, Automotive C++",
+    "location": "Pune, Bangalore",
+    "career_url": "https://www.tatatechnologies.com/careers/"
+  },
+  {
+    "name": "Sonata Software",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Modernization, Microsoft Cloud, Data Analytics",
+    "location": "Bangalore, Hyderabad",
+    "career_url": "https://www.sonata-software.com/careers"
+  },
+  {
+    "name": "Zensar Technologies",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Experience Tech, Cloud Native Backend, AI/ML",
+    "location": "Pune, Hyderabad, Bangalore",
+    "career_url": "https://www.zensar.com/careers"
+  },
+  {
+    "name": "L&T Technology Services (LTTS)",
+    "category": "IT Titan",
+    "cat_key": "it",
+    "domains": [
+      "cse",
+      "cybersecurity",
+      "aiml"
+    ],
+    "hiring_roles": "Industrial Cybersecurity, Telecom 5G, Smart Systems",
+    "location": "Vadodara, Bangalore, Chennai",
+    "career_url": "https://www.ltts.com/careers"
+  },
+  {
+    "name": "Flipkart",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml",
+      "cybersecurity"
+    ],
+    "hiring_roles": "SDE-1, Data Analyst, Recommendation AI, AppSec",
+    "location": "Bangalore",
+    "career_url": "https://www.flipkartcareers.com/"
+  },
+  {
+    "name": "Swiggy",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Data Engineer (Spark/Kafka), Logistics ML, Backend",
+    "location": "Bangalore / Remote",
+    "career_url": "https://careers.swiggy.com/"
+  },
+  {
+    "name": "Zomato",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Frontend React, GenAI Trainee, High Scale Node.js",
+    "location": "Gurgaon / Remote",
+    "career_url": "https://www.zomato.com/careers"
+  },
+  {
+    "name": "PhonePe",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml",
+      "cybersecurity"
+    ],
+    "hiring_roles": "Flutter Mobile, Distributed Java/HBase, Fraud ML",
+    "location": "Bangalore, Pune",
+    "career_url": "https://www.phonepe.com/careers/"
+  },
+  {
+    "name": "Razorpay",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "cybersecurity",
+      "aiml"
+    ],
+    "hiring_roles": "Product Security, Payments Backend Golang, FinTech ML",
+    "location": "Bangalore",
+    "career_url": "https://razorpay.com/jobs/"
+  },
+  {
+    "name": "CRED",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml",
+      "cybersecurity"
+    ],
+    "hiring_roles": "Decision Science, AppSec, Backend SDE, iOS/Android",
+    "location": "Bangalore",
+    "career_url": "https://cred.club/careers"
+  },
+  {
+    "name": "Meesho",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "BI Analyst, Search & Discovery ML, Java Backend",
+    "location": "Bangalore",
+    "career_url": "https://www.meesho.io/jobs"
+  },
+  {
+    "name": "Zepto",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Golang Backend, Prompt Eng / GenAI, Fast Logistics ML",
+    "location": "Mumbai, Bangalore",
+    "career_url": "https://www.zeptonow.com/careers"
+  },
+  {
+    "name": "Paytm",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "cybersecurity",
+      "aiml"
+    ],
+    "hiring_roles": "Backend Java/Spring, InfoSec, Risk AI, Payments",
+    "location": "Noida, Bangalore",
+    "career_url": "https://paytm.com/careers"
+  },
+  {
+    "name": "InMobi",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "MLOps, AdTech High Scale, Glance Content AI",
+    "location": "Bangalore",
+    "career_url": "https://www.inmobi.com/company/careers/"
+  },
+  {
+    "name": "Groww",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "FinTech SDE, Trading Engine Microservices, Analytics",
+    "location": "Bangalore",
+    "career_url": "https://groww.in/careers"
+  },
+  {
+    "name": "Zerodha",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse"
+    ],
+    "hiring_roles": "FOSS, Kite Trading Platform, Python/Go, PostgreSQL",
+    "location": "Bangalore",
+    "career_url": "https://zerodha.com/careers"
+  },
+  {
+    "name": "Urban Company",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Marketplace Algorithms, Full Stack Web, Mobile SDE",
+    "location": "Gurgaon",
+    "career_url": "https://www.urbancompany.com/careers"
+  },
+  {
+    "name": "Nykaa",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "E-Commerce SDE, Computer Vision Try-on, Data Eng",
+    "location": "Mumbai, Gurgaon",
+    "career_url": "https://www.nykaa.com/careers"
+  },
+  {
+    "name": "Blinkit",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "10-min Supply Chain Tech, Node.js, Route Optimization",
+    "location": "Gurgaon",
+    "career_url": "https://blinkit.com/careers"
+  },
+  {
+    "name": "Ola",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Krutrim GenAI, Ola Electric Firmware, Fleet Routing",
+    "location": "Bangalore",
+    "career_url": "https://www.olacabs.com/careers"
+  },
+  {
+    "name": "BharatPe",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "cybersecurity"
+    ],
+    "hiring_roles": "Merchant Payments SDE, AppSec, Golang, AWS",
+    "location": "Delhi NCR, Bangalore",
+    "career_url": "https://bharatpe.com/careers"
+  },
+  {
+    "name": "Dream11",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Sports Tech High Concurrency, Realtime Leaderboards",
+    "location": "Mumbai",
+    "career_url": "https://careers.dream11.com/"
+  },
+  {
+    "name": "Postman",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse"
+    ],
+    "hiring_roles": "API Platform, Electron/Desktop, Node.js, Cloud",
+    "location": "Bangalore / Remote",
+    "career_url": "https://www.postman.com/company/careers/"
+  },
+  {
+    "name": "BrowserStack",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "cybersecurity"
+    ],
+    "hiring_roles": "Cloud Testing Infra, Device Cloud, Systems, Security",
+    "location": "Mumbai / Remote",
+    "career_url": "https://www.browserstack.com/careers"
+  },
+  {
+    "name": "Freshworks",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Freddy AI, SaaS Backend Ruby/Java, Frontend React",
+    "location": "Chennai, Bangalore",
+    "career_url": "https://www.freshworks.com/company/careers/"
+  },
+  {
+    "name": "Delhivery",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Logistics Big Data, Geo-Spatial ML, Python, Erlang",
+    "location": "Gurgaon, Bangalore",
+    "career_url": "https://www.delhivery.com/careers"
+  },
+  {
+    "name": "Cars24",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Used Car Pricing AI, Computer Vision Inspection",
+    "location": "Gurgaon, Bangalore",
+    "career_url": "https://www.cars24.com/careers/"
+  },
+  {
+    "name": "PolicyBazaar",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "InsurTech SDE, Conversational AI, React Native",
+    "location": "Gurgaon",
+    "career_url": "https://www.policybazaar.com/careers/"
+  },
+  {
+    "name": "MakeMyTrip",
+    "category": "Unicorn & Consumer",
+    "cat_key": "unicorn",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Travel Tech, Dynamic Pricing ML, Android/iOS, Java",
+    "location": "Gurgaon, Bangalore",
+    "career_url": "https://careers.makemytrip.com/"
+  },
+  {
+    "name": "Goldman Sachs India",
+    "category": "FinTech & Banking",
+    "cat_key": "fintech",
+    "domains": [
+      "cse",
+      "aiml",
+      "cybersecurity"
+    ],
+    "hiring_roles": "Quant Engineering, Core Strats, Cloud & Cyber Defense",
+    "location": "Bangalore, Hyderabad",
+    "career_url": "https://www.goldmansachs.com/careers/"
+  },
+  {
+    "name": "Morgan Stanley India",
+    "category": "FinTech & Banking",
+    "cat_key": "fintech",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Low Latency Java/C++, Trading Systems, Predictive ML",
+    "location": "Mumbai, Bangalore",
+    "career_url": "https://www.morganstanley.com/about-us/careers"
+  },
+  {
+    "name": "JPMorgan Chase India",
+    "category": "FinTech & Banking",
+    "cat_key": "fintech",
+    "domains": [
+      "cse",
+      "cybersecurity",
+      "aiml"
+    ],
+    "hiring_roles": "Software Engineer, Threat Hunting, Big Data Analytics",
+    "location": "Bangalore, Hyderabad, Mumbai",
+    "career_url": "https://careers.jpmorgan.com/"
+  },
+  {
+    "name": "Barclays India",
+    "category": "FinTech & Banking",
+    "cat_key": "fintech",
+    "domains": [
+      "cse",
+      "cybersecurity"
+    ],
+    "hiring_roles": "Card Platforms, Open Banking APIs, Cyber SOC",
+    "location": "Pune, Chennai, Noida",
+    "career_url": "https://search.jobs.barclays/"
+  },
+  {
+    "name": "American Express India",
+    "category": "FinTech & Banking",
+    "cat_key": "fintech",
+    "domains": [
+      "cse",
+      "aiml",
+      "cybersecurity"
+    ],
+    "hiring_roles": "Risk Decisioning ML, Payments Core Java, Cyber",
+    "location": "Gurgaon, Bangalore",
+    "career_url": "https://www.americanexpress.com/en-in/careers/"
+  },
+  {
+    "name": "Wells Fargo India",
+    "category": "FinTech & Banking",
+    "cat_key": "fintech",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Banking Microservices, Kafka Data Pipelines, Cloud",
+    "location": "Hyderabad, Bangalore",
+    "career_url": "https://www.wellsfargojobs.com/"
+  },
+  {
+    "name": "BNY Mellon India",
+    "category": "FinTech & Banking",
+    "cat_key": "fintech",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Asset Custody Tech, Python Financial Analytics",
+    "location": "Pune, Chennai",
+    "career_url": "https://jobs.bnymellon.com/"
+  },
+  {
+    "name": "D.E. Shaw India",
+    "category": "FinTech & Banking",
+    "cat_key": "fintech",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Quantitative Analyst, Systems Architecture, High Perf C++",
+    "location": "Hyderabad",
+    "career_url": "https://www.deshawindia.com/careers"
+  },
+  {
+    "name": "Fidelity Investments India",
+    "category": "FinTech & Banking",
+    "cat_key": "fintech",
+    "domains": [
+      "cse",
+      "cybersecurity"
+    ],
+    "hiring_roles": "Retirement Cloud Platforms, DevSecOps, Java/Angular",
+    "location": "Bangalore, Chennai",
+    "career_url": "https://india.fidelity.com/careers/"
+  },
+  {
+    "name": "Standard Chartered GBS",
+    "category": "FinTech & Banking",
+    "cat_key": "fintech",
+    "domains": [
+      "cse",
+      "cybersecurity"
+    ],
+    "hiring_roles": "Global Core Banking, Cyber Defense, AWS/Azure Cloud",
+    "location": "Chennai, Bangalore",
+    "career_url": "https://www.sc.com/en/careers/"
+  },
+  {
+    "name": "NatWest Group India",
+    "category": "FinTech & Banking",
+    "cat_key": "fintech",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Customer Journeys, Data Science, Full Stack Java",
+    "location": "Gurgaon, Chennai, Bangalore",
+    "career_url": "https://jobs.natwestgroup.com/"
+  },
+  {
+    "name": "Citi India",
+    "category": "FinTech & Banking",
+    "cat_key": "fintech",
+    "domains": [
+      "cse",
+      "cybersecurity"
+    ],
+    "hiring_roles": "Treasury Tech, Cyber Security Operations, SDE",
+    "location": "Pune, Chennai, Mumbai",
+    "career_url": "https://jobs.citi.com/"
+  },
+  {
+    "name": "HSBC Technology India",
+    "category": "FinTech & Banking",
+    "cat_key": "fintech",
+    "domains": [
+      "cse",
+      "aiml"
+    ],
+    "hiring_roles": "Commercial Banking Cloud, Python Analytics, DevOps",
+    "location": "Pune, Hyderabad",
+    "career_url": "https://www.hsbc.com/careers"
+  },
+  {
+    "name": "Mastercard India",
+    "category": "FinTech & Banking",
+    "cat_key": "fintech",
+    "domains": [
+      "cse",
+      "cybersecurity",
+      "aiml"
+    ],
+    "hiring_roles": "Transaction Processing, Fraud AI, Cyber & Intelligence",
+    "location": "Pune, Gurgaon, Vadodara",
+    "career_url": "https://careers.mastercard.com/"
+  },
+  {
+    "name": "Visa India",
+    "category": "FinTech & Banking",
+    "cat_key": "fintech",
+    "domains": [
+      "cse",
+      "cybersecurity"
+    ],
+    "hiring_roles": "VisaNet High Availability, Payments Tokenization, Sec",
+    "location": "Bangalore",
+    "career_url": "https://corporate.visa.com/en/careers.html"
+  }
+];
+
 const GEMINI_MODEL    = 'gemini-2.0-flash';
 const GEMINI_ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
 
@@ -1017,6 +2370,10 @@ function buildSidebarChips() {
 
 // ── Apply all active filters ───────────────────────────────────────────────
 function applyFilters() {
+  if (activeDomain === 'top100') {
+    renderTop100Directory();
+    return;
+  }
   let jobs = [...allJobs];
 
   // Domain tab
@@ -1442,6 +2799,160 @@ function savAndGo() {
 }
 
 // ── Init on page load ──────────────────────────────────────────────────────
+
+// ── Top 100 Companies by Domain Directory ──────────────────────────────────
+let top100DomainFilter = 'all';
+let top100Search = '';
+
+function renderTop100Directory() {
+  sortBar.hidden = true;
+  activeFilters.hidden = true;
+
+  const cyberTotal = TOP100_COMPANIES.filter(c => (c.domains || []).includes('cybersecurity')).length;
+  const aimlTotal  = TOP100_COMPANIES.filter(c => (c.domains || []).includes('aiml')).length;
+  const cseTotal   = TOP100_COMPANIES.filter(c => (c.domains || []).includes('cse')).length;
+
+  const tabs = [
+    { id: 'all',           label: `🌐 All (${TOP100_COMPANIES.length})` },
+    { id: 'cybersecurity', label: `🔐 Cybersecurity (${cyberTotal})` },
+    { id: 'aiml',          label: `🤖 AI / ML & DS (${aimlTotal})` },
+    { id: 'cse',           label: `💻 CSE Core (${cseTotal})` },
+    { id: 'cat_unicorn',   label: `🦄 Unicorns & Startups` },
+    { id: 'cat_it',        label: `🏢 IT Titans` },
+    { id: 'cat_fintech',   label: `💳 FinTech & Banking` }
+  ];
+
+  let list = [...TOP100_COMPANIES];
+
+  if (top100DomainFilter === 'cybersecurity') {
+    list = list.filter(c => (c.domains || []).includes('cybersecurity'));
+  } else if (top100DomainFilter === 'aiml') {
+    list = list.filter(c => (c.domains || []).includes('aiml'));
+  } else if (top100DomainFilter === 'cse') {
+    list = list.filter(c => (c.domains || []).includes('cse'));
+  } else if (top100DomainFilter === 'cat_unicorn') {
+    list = list.filter(c => c.cat_key === 'unicorn');
+  } else if (top100DomainFilter === 'cat_it') {
+    list = list.filter(c => c.cat_key === 'it');
+  } else if (top100DomainFilter === 'cat_fintech') {
+    list = list.filter(c => c.cat_key === 'fintech');
+  }
+
+  if (top100Search) {
+    const q = top100Search.toLowerCase();
+    list = list.filter(c =>
+      c.name.toLowerCase().includes(q) ||
+      (c.hiring_roles || '').toLowerCase().includes(q) ||
+      c.location.toLowerCase().includes(q) ||
+      c.category.toLowerCase().includes(q)
+    );
+  }
+
+  showingCount.textContent = list.length;
+
+  jobsArea.innerHTML = `
+    <div class="top100-container">
+      <div class="top100-header">
+        <h2>🏢 Top Companies in India — Direct Career Portals</h2>
+        <p>Explore top tech companies in India hiring B.Tech graduates broken down by domain: <strong>Cybersecurity (${cyberTotal})</strong>, <strong>AI/ML &amp; Data Science (${aimlTotal})</strong>, and <strong>CSE Core (${cseTotal})</strong>. Click any portal to apply directly.</p>
+        <div class="top100-controls">
+          <input type="text" id="top100-search-input" class="top100-search" placeholder="Search companies or roles (e.g. Palo Alto, Google, SOC, GenAI, SDE, Goldman Sachs)..." value="${esc(top100Search)}" autocomplete="off" />
+          <div class="top100-cats">
+            ${tabs.map(t => `
+              <span class="top100-cat-chip ${top100DomainFilter === t.id ? 'active' : ''}" data-d="${t.id}">${t.label}</span>
+            `).join('')}
+          </div>
+        </div>
+      </div>
+      <div class="top100-grid">
+        ${list.map(c => {
+          const cNameLower = c.name.toLowerCase();
+          const matchCount = allJobs.filter(j =>
+            (j.company || '').toLowerCase().includes(cNameLower) ||
+            cNameLower.includes((j.company || '').toLowerCase())
+          ).length;
+
+          const initial = c.name.charAt(0);
+          const domBadges = (c.domains || []).map(d => {
+            if (d === 'cybersecurity') return '<span class="badge badge-cyber">🔐 Cyber</span>';
+            if (d === 'aiml')          return '<span class="badge badge-aiml">🤖 AI/ML</span>';
+            if (d === 'cse')           return '<span class="badge badge-cse">💻 CSE</span>';
+            return '';
+          }).join(' ');
+
+          return `
+            <div class="top100-card">
+              <div class="top100-card-head">
+                <div class="top100-company-title">
+                  <div class="top100-avatar">${initial}</div>
+                  <div>
+                    <div class="top100-company-name">${esc(c.name)}</div>
+                    <span class="top100-badge ${c.cat_key}">${esc(c.category)}</span>
+                  </div>
+                </div>
+              </div>
+              <div style="display:flex;gap:4px;flex-wrap:wrap;margin-top:2px;">
+                ${domBadges}
+              </div>
+              ${c.hiring_roles ? `
+                <div style="font-size:12px;color:var(--text);background:var(--surface-2);padding:6px 10px;border-radius:6px;border:1px solid var(--border);">
+                  <strong style="color:#a5b4fc;font-size:11px;">Hiring:</strong> ${esc(c.hiring_roles)}
+                </div>
+              ` : ''}
+              <div class="top100-loc">📍 ${esc(c.location)}</div>
+              <div class="top100-actions">
+                <a href="${esc(c.career_url)}" target="_blank" rel="noopener noreferrer" class="top100-btn-portal" title="Open official ${esc(c.name)} careers page">
+                  Career Portal ↗
+                </a>
+                <button class="top100-btn-jobs" data-comp="${esc(c.name)}" title="View openings for ${esc(c.name)} in HireSSU">
+                  ${matchCount > 0 ? `⚡ Jobs (${matchCount})` : 'Search 🔍'}
+                </button>
+              </div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    </div>
+  `;
+
+  // Attach search
+  const sInput = document.getElementById('top100-search-input');
+  if (sInput) {
+    sInput.addEventListener('input', e => {
+      top100Search = e.target.value.trim();
+      renderTop100Directory();
+      const nInp = document.getElementById('top100-search-input');
+      if (nInp) {
+        nInp.focus();
+        nInp.setSelectionRange(nInp.value.length, nInp.value.length);
+      }
+    });
+  }
+
+  // Attach domain filter chips
+  document.querySelectorAll('.top100-cat-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      top100DomainFilter = chip.dataset.d;
+      renderTop100Directory();
+    });
+  });
+
+  // Attach job filter buttons
+  document.querySelectorAll('.top100-btn-jobs').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const compName = btn.dataset.comp;
+      activeDomain = 'all';
+      domainTabs.forEach(t => t.classList.toggle('active', t.dataset.domain === 'all'));
+      globalSearch.value = compName;
+      searchQuery = compName;
+      clearSearch.classList.add('visible');
+      applyFilters();
+      window.scrollTo({ top: 350, behavior: 'smooth' });
+    });
+  });
+}
+
+
 (function init() {
   const savedKey = getKey();
   if (savedKey) {
