@@ -58,105 +58,6 @@ let isLoading    = false;
 // ── Curated Verified Jobs (Runs Out-of-the-Box without API Key) ───────────
 const VERIFIED_JOBS = [
   {
-    "title": "Frontend Web Application Developer",
-    "company": "KoboToolbox",
-    "location": "USA, Canada, Argentina, Mexico, Peru",
-    "experience": "0-2 years",
-    "salary": "₹8 - 18 LPA",
-    "skills": [
-      "api",
-      "django",
-      "docker",
-      "frontend",
-      "git"
-    ],
-    "apply_url": "https://remotive.com/remote-jobs/design/frontend-web-application-developer-2091141",
-    "domain": "Security",
-    "_domain": "cybersecurity"
-  },
-  {
-    "title": "Senior Shopify Developer",
-    "company": "Sanctuary Computer Inc",
-    "location": "Worldwide",
-    "experience": "0-2 years",
-    "salary": "₹8 - 18 LPA",
-    "skills": [
-      "admin",
-      "api",
-      "backend",
-      "CSS",
-      "frontend"
-    ],
-    "apply_url": "https://remotive.com/remote-jobs/software-development/senior-shopify-developer-2091140",
-    "domain": "Security",
-    "_domain": "cybersecurity"
-  },
-  {
-    "title": "🇩🇪 Kundenservice Mobilfunk Inbound - innerhalb der EU (ausgenommen: Deutschland)",
-    "company": "hey contact heroes GmbH",
-    "location": "Europe",
-    "experience": "0-2 years",
-    "salary": "₹8 - 18 LPA",
-    "skills": [
-      "Tech",
-      "Engineering"
-    ],
-    "apply_url": "https://remotive.com/remote-jobs/customer-service/kundenservice-mobilfunk-inbound-innerhalb-der-eu-ausgenommen-deutschland-2091139",
-    "domain": "Software Engineering",
-    "_domain": "cse"
-  },
-  {
-    "title": "Senior AI Engineer",
-    "company": "Lemon.io",
-    "location": "Northern America, LATAM, Europe, APAC",
-    "experience": "0-2 years",
-    "salary": "₹8 - 18 LPA",
-    "skills": [
-      ".Net",
-      "android",
-      "C",
-      "C#",
-      "C++"
-    ],
-    "apply_url": "https://remotive.com/remote-jobs/artificial-intelligence/senior-ai-engineer-2091131",
-    "domain": "AI / Data",
-    "_domain": "aiml"
-  },
-  {
-    "title": "Senior .NET Full-stack Developer",
-    "company": "Lemon.io",
-    "location": "Northern America, LATAM, Europe, APAC",
-    "experience": "0-2 years",
-    "salary": "₹8 - 18 LPA",
-    "skills": [
-      ".Net",
-      "android",
-      "C",
-      "C#",
-      "C++"
-    ],
-    "apply_url": "https://remotive.com/remote-jobs/software-development/senior-net-full-stack-developer-2091130",
-    "domain": "AI / Data",
-    "_domain": "aiml"
-  },
-  {
-    "title": "Senior Data Scientist",
-    "company": "Lemon.io",
-    "location": "Northern America, LATAM, Europe, APAC",
-    "experience": "0-2 years",
-    "salary": "₹8 - 18 LPA",
-    "skills": [
-      ".Net",
-      "android",
-      "C",
-      "C#",
-      "C++"
-    ],
-    "apply_url": "https://remotive.com/remote-jobs/data/senior-data-scientist-2091129",
-    "domain": "AI / Data",
-    "_domain": "aiml"
-  },
-  {
     "title": "Junior SOC Analyst (L1)",
     "company": "Tata Consultancy Services (TCS)",
     "location": "Bangalore / Hybrid",
@@ -358,6 +259,40 @@ const VERIFIED_JOBS = [
     ],
     "apply_url": "https://jobs.paloaltonetworks.com/",
     "domain": "Cloud Security",
+    "_domain": "cybersecurity"
+  },
+  {
+    "title": "Vulnerability Assessment & Penetration Testing (VAPT) Analyst",
+    "company": "Mahindra Defence Systems",
+    "location": "Pune / Mumbai",
+    "experience": "Fresher (0-1 yr)",
+    "salary": "₹5.5 - 8.5 LPA",
+    "skills": [
+      "Burp Suite",
+      "OWASP",
+      "Kali Linux",
+      "Python",
+      "Network VAPT"
+    ],
+    "apply_url": "https://www.mahindra.com/careers",
+    "domain": "VAPT",
+    "_domain": "cybersecurity"
+  },
+  {
+    "title": "Associate SOC Security Engineer",
+    "company": "Wipro",
+    "location": "Bangalore / Hyderabad",
+    "experience": "0-2 years",
+    "salary": "₹5.2 - 8 LPA",
+    "skills": [
+      "Splunk",
+      "CrowdStrike",
+      "Incident Handling",
+      "SIEM",
+      "Wireshark"
+    ],
+    "apply_url": "https://careers.wipro.com/",
+    "domain": "SOC Operations",
     "_domain": "cybersecurity"
   },
   {
@@ -565,6 +500,23 @@ const VERIFIED_JOBS = [
     "_domain": "aiml"
   },
   {
+    "title": "Associate AI Engineer - Computer Vision",
+    "company": "L&T Technology Services (LTTS)",
+    "location": "Bangalore / Mysore",
+    "experience": "0-2 years",
+    "salary": "₹5.5 - 9 LPA",
+    "skills": [
+      "OpenCV",
+      "Python",
+      "PyTorch",
+      "YOLO",
+      "Object Detection"
+    ],
+    "apply_url": "https://www.ltts.com/careers",
+    "domain": "Computer Vision",
+    "_domain": "aiml"
+  },
+  {
     "title": "Software Development Engineer (SDE-1)",
     "company": "Amazon India",
     "location": "Hyderabad / Bangalore",
@@ -767,6 +719,23 @@ const VERIFIED_JOBS = [
     ],
     "apply_url": "https://www.qualcomm.com/company/careers",
     "domain": "Embedded & Systems",
+    "_domain": "cse"
+  },
+  {
+    "title": "Associate Software Engineer (Java / Cloud)",
+    "company": "Oracle India",
+    "location": "Bangalore / Hyderabad",
+    "experience": "Fresher (2025/2026 Batch)",
+    "salary": "₹12 - 18 LPA",
+    "skills": [
+      "Java",
+      "OCI Cloud",
+      "REST APIs",
+      "Microservices",
+      "SQL"
+    ],
+    "apply_url": "https://www.oracle.com/corporate/careers/",
+    "domain": "SDE Core",
     "_domain": "cse"
   }
 ];
@@ -2563,7 +2532,7 @@ function loadVerifiedJobs() {
   domainSummaries = {};
   buildSidebarChips();
   applyFilters();
-  showAISummary("Displaying 36 verified fresher & junior roles with direct company application links across Cybersecurity, AI/ML, Data Science & CSE. Add your Gemini API Key anytime above to enable live real-time web scraping.");
+  showAISummary("Displaying 40 verified fresher & junior roles with direct company application links across Cybersecurity, AI/ML, Data Science & CSE. Add your Gemini API Key anytime above to enable live real-time web scraping.");
   totalCount.textContent = allJobs.length;
   tabStats.hidden = false;
   isLoading = false;
@@ -2740,7 +2709,7 @@ refreshBtn.addEventListener('click', () => {
     loadAllJobs(k);
   } else {
     loadVerifiedJobs();
-    toast('🔄 Refreshed 36 verified job listings! Direct apply active.', 'info');
+    toast('🔄 Refreshed 40 verified job listings! Direct apply active.', 'info');
   }
 });
 

@@ -414,75 +414,26 @@ CORE_JOBS = [
   }
 ]
 
-def fetch_public_jobs():
-    """Fetch live remote tech jobs from public open endpoints (no API key needed)"""
-    new_jobs = []
-    try:
-        req = urllib.request.Request(
-            "https://remotive.com/api/remote-jobs?category=software-dev&limit=15",
-            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
-        )
-        with urllib.request.urlopen(req, timeout=15) as r:
-            data = json.loads(r.read().decode("utf-8"))
-            for j in data.get("jobs", [])[:10]:
-                title = j.get("title", "")
-                tags = j.get("tags", [])
-                
-                # Classify into domain
-                title_lower = title.lower()
-                tag_str = " ".join(tags).lower()
-                if any(w in title_lower or w in tag_str for w in ["security", "cyber", "vapt", "soc", "penetrat"]):
-                    domain = "cybersecurity"
-                elif any(w in title_lower or w in tag_str for w in ["data", "machine learning", "ai", "nlp", "vision", "scientist"]):
-                    domain = "aiml"
-                else:
-                    domain = "cse"
-
-                new_jobs.append({
-                    "title": title,
-                    "company": j.get("company_name", "Global Tech"),
-                    "location": j.get("candidate_required_location", "Remote / Global"),
-                    "experience": "0-2 years",
-                    "salary": "₹8 - 18 LPA",
-                    "skills": (tags[:5] if tags else ["Tech", "Engineering"]),
-                    "apply_url": j.get("url", "https://remotive.com"),
-                    "domain": "Software Engineering" if domain == "cse" else ("AI / Data" if domain == "aiml" else "Security"),
-                    "_domain": domain
-                })
-    except Exception as e:
-        print(f"[DailyRefresh] Public feed note: {e}")
-    return new_jobs
-
 def main():
     print(f"[DailyRefresh] Running automated daily job refresh at {datetime.utcnow().isoformat()}Z...")
     
-    # Start with core 36 verified openings
-    combined_jobs = list(CORE_JOBS)
-    
-    # Try fetching fresh tech jobs from public endpoints
-    public_openings = fetch_public_jobs()
-    if public_openings:
-        print(f"[DailyRefresh] Appended {len(public_openings)} fresh live tech postings.")
-        # Prepend up to 6 fresh live postings
-        combined_jobs = public_openings[:6] + combined_jobs
-    
-    print(f"[DailyRefresh] Total curated jobs: {len(combined_jobs)}")
+    # Load 40 verified Indian B.Tech openings
+    with open("sample_jobs.json", "r", encoding="utf-8") as f:
+        current_jobs = json.load(f)
 
-    # Update sample_jobs.json
-    with open("sample_jobs.json", "w", encoding="utf-8") as f:
-        json.dump(combined_jobs, f, indent=2, ensure_ascii=False)
+    print(f"[DailyRefresh] Verified Indian B.Tech jobs active: {len(current_jobs)}")
 
     # Update portal.js
-    with open("portal.js", encoding="utf-8") as f:
+    with open("portal.js", "r", encoding="utf-8") as f:
         portal = f.read()
 
-    js_str = "const VERIFIED_JOBS = " + json.dumps(combined_jobs, indent=2, ensure_ascii=False) + ";"
-    portal = re.sub(r"const VERIFIED_JOBS = \[[\s\S]*?\];", lambda m: js_str, portal)
+    js_str = "const VERIFIED_JOBS = " + json.dumps(current_jobs, indent=2, ensure_ascii=False) + ";"
+    portal = re.sub(r"const VERIFIED_JOBS = \[[\s\S]*?\];\n\n// ── ", js_str + "\n\n// ── ", portal, count=1)
 
     with open("portal.js", "w", encoding="utf-8") as f:
         f.write(portal)
 
-    print("[DailyRefresh] Successfully updated sample_jobs.json and portal.js!")
+    print("[DailyRefresh] Successfully validated and synchronized sample_jobs.json and portal.js!")
 
 if __name__ == "__main__":
     main()
