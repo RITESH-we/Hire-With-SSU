@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HireSSU — B.Tech Job Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="portal.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <span class="brand-logo">🎓</span>
+        <span>Hire<span class="accent">SSU</span></span>
+      </a>
+      <div class="nav-search-wrap">
+        <span class="ns-icon">🔍</span>
+        <input id="global-search" type="text" class="nav-search"
+          placeholder="Search jobs, skills, companies… (e.g. SOC Analyst, React, VAPT)"
+          autocomplete="off" spellcheck="false" />
+        <button class="ns-clear" id="clear-search" title="Clear">✕</button>
+      </div>
+      <div class="nav-right">
+        <button class="key-btn" id="key-btn" title="Toggle Live AI Search / Free Mode">
+          <span id="key-status-dot" class="key-dot free-mode"></span>
+          <span id="key-btn-label">⚡ Free Mode</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── API KEY MODAL ── -->
+  <div class="modal-overlay" id="key-modal" hidden>
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>⚡ Live AI Search (Optional)</h3>
+        <button class="modal-close" id="modal-close">✕</button>
+      </div>
+      <p class="modal-desc">
+        The portal displays <strong>verified direct-apply openings without needing any API key</strong>. To have Gemini 2.0 Flash search the live web for brand new postings, paste a free key from
+        <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">aistudio.google.com</a>.
+      </p>
+      <div class="modal-input-row">
+        <input id="modal-api-input" type="password" class="modal-input" placeholder="Paste your Gemini key here… AIza…" autocomplete="off" spellcheck="false" />
+        <button class="modal-eye" id="modal-eye">👁️</button>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <button class="modal-save-btn" id="modal-save">🤖 Enable Live AI Search</button>
+        <button class="modal-clear-btn" id="modal-clear" style="background:transparent;border:1px solid var(--border);color:var(--text-2);padding:10px;border-radius:var(--r-md);cursor:pointer;font-size:13px;transition:all 0.2s;">⚡ Use Free Mode (No API Key)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── HERO STRIP ── -->
+  <div class="hero-strip">
+    <div class="hero-inner">
+      <h1>Latest Jobs for B.Tech Graduates</h1>
+      <p>AI-powered · Real-time web search · Updated every session</p>
+      <div class="hero-tags">
+        <span class="htag" data-q="SOC Analyst">📡 SOC</span>
+        <span class="htag" data-q="VAPT Web Application">🔓 VAPT</span>
+        <span class="htag" data-q="Bug Bounty Hunter">💰 Bug Bounty</span>
+        <span class="htag" data-q="ML Engineer">🤖 ML Engineer</span>
+        <span class="htag" data-q="LLM RAG Generative AI">✨ GenAI / LLM</span>
+        <span class="htag" data-q="Data Scientist Python">📊 Data Scientist</span>
+        <span class="htag" data-q="Data Analyst SQL Power BI">📈 Data Analyst</span>
+        <span class="htag" data-q="Data Engineer Kafka Spark">🔧 Data Engineer</span>
+        <span class="htag" data-q="Business Intelligence BI Analyst">💡 BI Analyst</span>
+        <span class="htag" data-q="SDE DSA System Design">💻 SDE</span>
+        <span class="htag" data-q="DevOps Kubernetes">🔄 DevOps</span>
+        <span class="htag" data-q="Cloud AWS Engineer">☁️ Cloud</span>
+        <span class="htag" data-q="Flutter Mobile Developer">📱 Mobile</span>
+        <span class="htag" data-q="Cybersecurity Fresher">🔐 Cyber</span>
+        <span class="htag" data-q="MLOps AI Infrastructure">⚙️ MLOps</span>
+        <span class="htag" data-q="AI Agent Developer">🕵️ AI Agent</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── DOMAIN TABS ── -->
+  <div class="domain-tabs-wrap">
+    <div class="domain-tabs">
+      <button class="dtab active" data-domain="all">🌐 All Jobs</button>
+      <button class="dtab" data-domain="cybersecurity">🔐 Cybersecurity</button>
+      <button class="dtab" data-domain="aiml">🤖 AI / ML &amp; DS</button>
+      <button class="dtab" data-domain="cse">💻 CSE Core</button>
+    </div>
+    <div class="tab-stats" id="tab-stats" hidden>
+      <span id="total-count">0</span> jobs &nbsp;·&nbsp;
+      <button class="refresh-pill" id="refresh-btn">🔄 Refresh</button>
+    </div>
+  </div>
+
+  <!-- ── MAIN PORTAL LAYOUT ── -->
+  <main class="portal-main">
+
+    <!-- SIDEBAR -->
+    <aside class="portal-sidebar">
+
+      <div class="sidebar-section">
+        <div class="ss-heading">⚡ Experience</div>
+        <div class="chip-group" id="exp-chips">
+          <span class="fchip active" data-filter="exp" data-val="all">All</span>
+          <span class="fchip" data-filter="exp" data-val="fresher">🌱 Fresher</span>
+          <span class="fchip" data-filter="exp" data-val="junior">🔼 1–3 yrs</span>
+          <span class="fchip" data-filter="exp" data-val="mid">⬆️ 3–5 yrs</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="ss-heading">📍 Location</div>
+        <div class="chip-group" id="loc-chips">
+          <span class="fchip active" data-filter="loc" data-val="all">All</span>
+          <span class="fchip" data-filter="loc" data-val="remote">🌐 Remote</span>
+          <span class="fchip" data-filter="loc" data-val="bangalore">Bangalore</span>
+          <span class="fchip" data-filter="loc" data-val="hyderabad">Hyderabad</span>
+          <span class="fchip" data-filter="loc" data-val="mumbai">Mumbai</span>
+          <span class="fchip" data-filter="loc" data-val="delhi">Delhi NCR</span>
+          <span class="fchip" data-filter="loc" data-val="pune">Pune</span>
+          <span class="fchip" data-filter="loc" data-val="chennai">Chennai</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section" id="skills-section" hidden>
+        <div class="ss-heading">🏷️ Top Skills</div>
+        <div class="chip-group" id="skills-chips"></div>
+      </div>
+
+      <div class="sidebar-section" id="company-section" hidden>
+        <div class="ss-heading">🏢 Companies</div>
+        <div class="chip-group" id="company-chips"></div>
+      </div>
+
+    </aside>
+
+    <!-- CONTENT AREA -->
+    <section class="portal-content">
+
+      <!-- ACTIVE FILTER PILLS -->
+      <div class="active-filters" id="active-filters" hidden>
+        <span class="af-label">Active filters:</span>
+        <div class="af-chips" id="af-chips"></div>
+        <button class="af-clear" id="af-clear">Clear all ✕</button>
+      </div>
+
+      <!-- SORT BAR -->
+      <div class="sort-bar" id="sort-bar" hidden>
+        <span><strong id="showing-count">0</strong> jobs showing</span>
+        <div class="sort-right">
+          <span>Sort:</span>
+          <select id="sort-select" class="sort-select">
+            <option value="default">Relevance</option>
+            <option value="company">Company A→Z</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- JOBS AREA -->
+      <div id="jobs-area">
+        <div class="welcome-screen" id="welcome-screen">
+          <div class="ws-icon">🚀</div>
+          <h2>India's AI Job Portal for B.Tech Graduates</h2>
+          <p>Add your <strong>free Gemini API key</strong> and the portal automatically searches the entire web for the latest openings across Cybersecurity, AI/ML &amp; Data Science, and CSE Core — zero forms, zero dropdowns.</p>
+          <button class="ws-cta" id="ws-cta-btn">🔑 Add API Key &amp; Start</button>
+          <div class="ws-features">
+            <div class="ws-feat"><span>🌐</span><span>Live web search</span></div>
+            <div class="ws-feat"><span>🤖</span><span>AI-curated</span></div>
+            <div class="ws-feat"><span>⚡</span><span>Instant filters</span></div>
+            <div class="ws-feat"><span>📎</span><span>Direct apply</span></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="portal-footer">
+    <div class="pf-inner">
+      <span>🎓 <strong>HireSSU</strong> — AI Job Portal for B.Tech Graduates</span>
+      <span>Powered by <a href="https://aistudio.google.com" target="_blank" rel="noopener">Gemini 2.0 Flash</a> + Google Search</span>
+    </div>
+  </footer>
+
+  <div id="toast-root"></div>
+  <script src="portal.js"></script>
+</body>
+</html>
