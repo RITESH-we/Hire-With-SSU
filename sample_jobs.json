@@ -88,6 +88,50 @@
     "_domain": "cybersecurity"
   },
   {
+    "title": "Security Operations Center (SOC) Specialist",
+    "company": "Deloitte India",
+    "location": "Hyderabad / Bangalore",
+    "experience": "0-2 years",
+    "salary": "₹6.5 - 11 LPA",
+    "skills": ["SIEM", "Microsoft Sentinel", "Log Analysis", "Incident Triage", "KQL"],
+    "apply_url": "https://jobsindia.deloitte.com/",
+    "domain": "SOC Operations",
+    "_domain": "cybersecurity"
+  },
+  {
+    "title": "Product Security & Bug Bounty Engineer",
+    "company": "Razorpay",
+    "location": "Bangalore / Remote",
+    "experience": "0-2 years",
+    "salary": "₹12 - 20 LPA",
+    "skills": ["AppSec", "OWASP Top 10", "Threat Modeling", "Web Security", "Python"],
+    "apply_url": "https://razorpay.com/jobs/",
+    "domain": "Product Security",
+    "_domain": "cybersecurity"
+  },
+  {
+    "title": "Cyber Defense & Incident Response Associate",
+    "company": "PwC India",
+    "location": "Kolkata / Gurgaon",
+    "experience": "Fresher (0-1 yr)",
+    "salary": "₹5.2 - 8 LPA",
+    "skills": ["DFIR", "Malware Analysis", "Windows Internals", "Wireshark", "Memory Forensics"],
+    "apply_url": "https://www.pwc.in/careers.html",
+    "domain": "DFIR",
+    "_domain": "cybersecurity"
+  },
+  {
+    "title": "Cloud Infrastructure Security Analyst",
+    "company": "Palo Alto Networks India",
+    "location": "Bangalore",
+    "experience": "0-2 years",
+    "salary": "₹14 - 24 LPA",
+    "skills": ["Prisma Cloud", "CSPM", "Kubernetes Security", "Linux", "Python"],
+    "apply_url": "https://jobs.paloaltonetworks.com/",
+    "domain": "Cloud Security",
+    "_domain": "cybersecurity"
+  },
+  {
     "title": "Machine Learning Engineer (NLP & LLM)",
     "company": "Jio Platforms",
     "location": "Mumbai / Navi Mumbai",
@@ -176,6 +220,50 @@
     "_domain": "aiml"
   },
   {
+    "title": "Data Scientist - Decision Analytics",
+    "company": "CRED",
+    "location": "Bangalore",
+    "experience": "0-2 years",
+    "salary": "₹14 - 24 LPA",
+    "skills": ["Python", "SQL", "Predictive Modeling", "Scikit-Learn", "Feature Engineering"],
+    "apply_url": "https://cred.club/careers",
+    "domain": "Data Science",
+    "_domain": "aiml"
+  },
+  {
+    "title": "Associate Machine Learning Researcher",
+    "company": "Microsoft Research India",
+    "location": "Bangalore",
+    "experience": "Fresher (2025/2026 Batch)",
+    "salary": "₹18 - 32 LPA",
+    "skills": ["Deep Learning", "PyTorch", "Transformers", "Algorithms", "Linear Algebra"],
+    "apply_url": "https://careers.microsoft.com/",
+    "domain": "AI Research",
+    "_domain": "aiml"
+  },
+  {
+    "title": "Data Analytics Trainee",
+    "company": "Ernst & Young (EY) India",
+    "location": "Gurgaon / Chennai",
+    "experience": "Fresher",
+    "salary": "₹4.5 - 7 LPA",
+    "skills": ["SQL", "Power BI", "Advanced Excel", "Python", "Statistics"],
+    "apply_url": "https://www.ey.com/en_in/careers",
+    "domain": "Data Analyst",
+    "_domain": "aiml"
+  },
+  {
+    "title": "AI & Prompt Engineering Associate",
+    "company": "Zepto",
+    "location": "Mumbai / Bangalore",
+    "experience": "0-1 years",
+    "salary": "₹7.5 - 12 LPA",
+    "skills": ["LangChain", "Claude/Gemini API", "Python", "Evaluation", "Prompt Tuning"],
+    "apply_url": "https://www.zeptonow.com/careers",
+    "domain": "GenAI / LLM",
+    "_domain": "aiml"
+  },
+  {
     "title": "Software Development Engineer (SDE-1)",
     "company": "Amazon India",
     "location": "Hyderabad / Bangalore",
@@ -261,6 +349,50 @@
     "skills": ["JavaScript", "React", "Node.js", "MongoDB", "Git"],
     "apply_url": "https://www.persistent.com/careers/",
     "domain": "Full Stack",
+    "_domain": "cse"
+  },
+  {
+    "title": "Associate Software Engineer (Java / C++)",
+    "company": "Google India",
+    "location": "Hyderabad / Bangalore",
+    "experience": "Fresher (2025/2026 Batch)",
+    "salary": "₹18 - 35 LPA",
+    "skills": ["Data Structures", "Algorithms", "C++", "Java", "Systems Programming"],
+    "apply_url": "https://www.google.com/about/careers/applications/jobs/results/?location=India",
+    "domain": "SDE Core",
+    "_domain": "cse"
+  },
+  {
+    "title": "Platform Infrastructure & SRE",
+    "company": "Cisco Systems India",
+    "location": "Bangalore",
+    "experience": "0-2 years",
+    "salary": "₹11 - 18 LPA",
+    "skills": ["Linux", "Golang", "Python", "Docker", "Kubernetes", "Terraform"],
+    "apply_url": "https://jobs.cisco.com/",
+    "domain": "Cloud & DevOps",
+    "_domain": "cse"
+  },
+  {
+    "title": "Backend Developer - High Scale APIs",
+    "company": "Zepto",
+    "location": "Mumbai / Bangalore",
+    "experience": "0-2 years",
+    "salary": "₹10 - 16 LPA",
+    "skills": ["Golang", "PostgreSQL", "Redis", "Kafka", "Distributed Systems"],
+    "apply_url": "https://www.zeptonow.com/careers",
+    "domain": "Backend SDE",
+    "_domain": "cse"
+  },
+  {
+    "title": "Systems Software Engineer - Linux & Firmware",
+    "company": "Qualcomm India",
+    "location": "Hyderabad / Bangalore",
+    "experience": "Fresher (0-1 yr)",
+    "salary": "₹13 - 22 LPA",
+    "skills": ["C", "Linux Kernel", "RTOS", "Device Drivers", "Embedded C"],
+    "apply_url": "https://www.qualcomm.com/company/careers",
+    "domain": "Embedded & Systems",
     "_domain": "cse"
   }
 ]
