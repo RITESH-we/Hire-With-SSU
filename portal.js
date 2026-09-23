@@ -2259,7 +2259,7 @@ function renderCard(job, idx) {
     <div class="meta-row">
       <span class="meta-chip">📍 ${esc(job.location || 'India')}</span>
       <span class="meta-chip">💼 ${esc(expLabel)}</span>
-      ${job.salary ? `<span class="meta-chip">💰 ${esc(job.salary)}</span>` : ''}
+      ${job.salary ? `<span class="meta-chip salary">💰 ${esc(job.salary)}</span>` : ''}
     </div>
     ${skills.length ? `
     <div class="skills-row">
