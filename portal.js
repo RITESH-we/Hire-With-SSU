@@ -2268,6 +2268,20 @@ function renderCard(job, idx) {
     <div class="apply-link">Apply Now &nbsp;→</div>
   `;
 
+  a.addEventListener('click', (e) => {
+    if (applyUrl && applyUrl.startsWith('http')) {
+      try {
+        const w = window.open(applyUrl, '_blank', 'noopener,noreferrer');
+        if (!w || w.closed || typeof w.closed === 'undefined') {
+          window.location.href = applyUrl;
+        }
+      } catch (err) {
+        window.location.href = applyUrl;
+      }
+      e.preventDefault();
+    }
+  });
+
   return a;
 }
 
@@ -2850,7 +2864,7 @@ function renderTop100Directory() {
           }).join(' ');
 
           return `
-            <div class="top100-card">
+            <div class="top100-card" data-url="${esc(c.career_url)}" title="Click to open ${esc(c.name)} official careers page">
               <div class="top100-card-head">
                 <div class="top100-company-title">
                   <div class="top100-avatar">${initial}</div>
@@ -2873,7 +2887,7 @@ function renderTop100Directory() {
                 <a href="${esc(c.career_url)}" target="_blank" rel="noopener noreferrer" class="top100-btn-portal" title="Open official ${esc(c.name)} careers page">
                   Career Portal ↗
                 </a>
-                <button class="top100-btn-jobs" data-comp="${esc(c.name)}" title="View openings for ${esc(c.name)} in HireSSU">
+                <button class="top100-btn-jobs" data-comp="${esc(c.name)}" data-count="${matchCount}" title="View openings for ${esc(c.name)}">
                   ${matchCount > 0 ? `⚡ Jobs (${matchCount})` : 'Search 🔍'}
                 </button>
               </div>
@@ -2906,17 +2920,60 @@ function renderTop100Directory() {
     });
   });
 
-  // Attach job filter buttons
+  // Make entire company profile card clickable
+  document.querySelectorAll('.top100-card').forEach(card => {
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('.top100-btn-jobs') || e.target.closest('.top100-btn-portal')) return;
+      const url = card.dataset.url;
+      if (url && url.startsWith('http')) {
+        try {
+          const w = window.open(url, '_blank', 'noopener,noreferrer');
+          if (!w || w.closed || typeof w.closed === 'undefined') {
+            window.location.href = url;
+          }
+        } catch (err) {
+          window.location.href = url;
+        }
+      }
+    });
+  });
+
+  // Attach portal buttons direct redirection
+  document.querySelectorAll('.top100-btn-portal').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const url = a.href;
+      if (url && url.startsWith('http')) {
+        try {
+          const w = window.open(url, '_blank', 'noopener,noreferrer');
+          if (!w || w.closed || typeof w.closed === 'undefined') {
+            window.location.href = url;
+          }
+        } catch (err) {
+          window.location.href = url;
+        }
+        e.preventDefault();
+      }
+    });
+  });
+
+  // Attach job filter / live search buttons
   document.querySelectorAll('.top100-btn-jobs').forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
       const compName = btn.dataset.comp;
-      activeDomain = 'all';
-      domainTabs.forEach(t => t.classList.toggle('active', t.dataset.domain === 'all'));
-      globalSearch.value = compName;
-      searchQuery = compName;
-      clearSearch.classList.add('visible');
-      applyFilters();
-      window.scrollTo({ top: 350, behavior: 'smooth' });
+      const count = parseInt(btn.dataset.count || '0', 10);
+      if (count > 0) {
+        activeDomain = 'all';
+        domainTabs.forEach(t => t.classList.toggle('active', t.dataset.domain === 'all'));
+        globalSearch.value = compName;
+        searchQuery = compName;
+        clearSearch.classList.add('visible');
+        applyFilters();
+        window.scrollTo({ top: 350, behavior: 'smooth' });
+      } else {
+        const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(compName + ' fresher engineering jobs careers india')}&ibp=htl;jobs`;
+        window.open(searchUrl, '_blank', 'noopener,noreferrer');
+      }
     });
   });
 }

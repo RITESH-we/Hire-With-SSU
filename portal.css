@@ -720,9 +720,11 @@ body::after {
 a.job-card {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .job-card {
+  cursor: pointer;
   background: var(--card-gradient);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--r-lg);
@@ -1184,6 +1186,7 @@ a.job-card {
   gap: 18px;
 }
 .top100-card {
+  cursor: pointer;
   background: var(--card-gradient);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--r-lg);
